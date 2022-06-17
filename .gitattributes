@@ -1,2 +1,27 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+first_name = "pimp"
+last_name = "P"
+full_name = f"{first_name} {last_name}"
+print(full_name)
+
+name = "Pimp P"
+print(name.upper())
+print(name.lower())
+
+first_name = "pimp"
+last_name = "P"
+full_name = f"{first_name} {last_name}"
+message = f"whats going on, {full_name.title()}!"
+print(message)
+
+v1 = "first string"
+v2 = "second string"
+temp = v1
+v1 = v2
+v2 = temp
+print(temp)
+print(v1)
+# simplest way to swap values of a variable.
+
+print("hey!")
+print("\tHello!")
+# \t & \n = tab & newline
