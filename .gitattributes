@@ -1,27 +1,1758 @@
-first_name = "pimp"
-last_name = "P"
-full_name = f"{first_name} {last_name}"
-print(full_name)
+#lists
+print("list of basketball players:\nLebron\nKobe\nHarden")
 
-name = "Pimp P"
-print(name.upper())
-print(name.lower())
+print("list of entrepeneurs:\n\tDame Dash\n\tMaster P\n\tSnoop Dogg\n\tChamillionare")
 
-first_name = "pimp"
-last_name = "P"
-full_name = f"{first_name} {last_name}"
-message = f"whats going on, {full_name.title()}!"
+
+
+
+favorite_language = 'python '
+favorite_language
+favorite_language.rstrip()
+print(favorite_language)
+
+
+
+
+famous_person = "Kobe Bryant"
+message = f"My most favorite famous person has to be {famous_person.title()}"
 print(message)
 
-v1 = "first string"
-v2 = "second string"
-temp = v1
-v1 = v2
-v2 = temp
-print(temp)
-print(v1)
-# simplest way to swap values of a variable.
+print('it is not what you say, but how you say it, "pimp p"')
 
-print("hey!")
-print("\tHello!")
-# \t & \n = tab & newline
+
+
+
+universe_age = 15_000_000_000
+print(universe_age)
+
+x, y, z = 0, 0, 0
+
+print(x)
+
+print(4*2)
+print(3+5)
+print(32/4)
+print(12-4)
+
+
+
+
+# payton joseph kelley is the greatest ever to exist
+print("Pimp P is my persona")
+
+
+
+
+# import this, zen of python
+# list = ['']
+
+
+#list comprehension
+four_kings = ['marvin hagler', 'sugar ray leonard', 'roberto duran', 'thomas hearns']
+print(four_kings[-1].upper())
+message = f"i enjoyed watching {four_kings[-1].title()} this year"
+print(message)
+four_kings[0] = 'mike tyson'
+print(four_kings[0].title())
+# print 1st index/position of the four kings, capitalized first letter. first item starts at 0, special syntax for accessing last element in list: -1. -2 for 2nd last
+
+four_kings.append('mike tyson')
+print(four_kings)
+
+mogules = []
+mogules.append('mike tyson')
+mogules.append('dame dash')
+mogules.append('easy e')
+
+print(mogules)
+
+mogules = ['easy e', 'mike tyson', 'dame dash']
+mogules.insert(-1, 'kobe')
+print(mogules)
+# insert the mogule kobe to the last element of the list
+
+
+
+
+cars = ['volvo', 'mercedes', 'benz']
+print(cars)
+
+del cars[-2]
+print(cars)
+
+
+
+#pop method
+candy = ['kit kat', 'twix', 'reeses piece']
+print(candy)
+
+popped_candy = candy.pop(1)
+print(candy)
+print(popped_candy)
+
+candy = ['twix', 'reeses piece', 'kit kat']
+
+last_owned = candy.pop()
+
+message = f"the last candy i ate was the {last_owned.title()}"
+print(message)
+
+
+
+#remove method
+shoes = ['nike', 'jordans', 'under armour']
+print(shoes)
+
+shoes.remove('nike')
+print(shoes)
+
+shoes.insert(0, 'reebok')
+too_ugly = ('jordans')
+shoes.remove(too_ugly)
+print(shoes)
+print(f"\n\t{too_ugly.title()} dont look good on my feet")
+
+
+
+#sort method
+states = ['texas', 'wisconsin', 'michigan']
+states.sort()
+print(states)
+
+
+
+#sorted list\method
+marvel_villians = ['thanos', 'Dr. Doom', 'scarlett witch']
+marvel_villians.sort(reverse=True)
+print(marvel_villians)
+
+marvel_favorites = ['Dr. Doom', 'spiderman', 'angela']
+
+print("here is the OG list:")
+print(marvel_favorites)
+
+print("\nHere is the sorted list:")
+marvel_villians.sort(reverse=True)
+# not sure if this worked or not
+print(sorted(marvel_favorites))
+
+print("\nHere is the OG list again:")
+print(marvel_favorites)
+
+
+
+#len method: find length of list
+races = ['black', 'white', 'asian']
+print(races)
+
+races.reverse()
+print(races)
+
+print(f"the 3 races include {races}")
+
+dc_heroes = ['batman', 'flash', 'superman', 'green lantern']
+len(dc_heroes)
+print(dc_heroes)
+
+
+
+
+decent_cars = ['honda', 'toyota', 'dodge']
+print(decent_cars[-1])
+
+
+
+
+actors = ['mike tyson', 'shaq', 'noreaga']
+for actor in actors:
+  print(actor)
+
+
+
+#for loop
+marvel_villians = ['thanos', 'dr. doom', 'galactus', 'punisher']
+for marvel_villian in marvel_villians:
+  print(f"{marvel_villian.title()}, you are VERY evil!")
+  print(f"\n\t Let's see who you will fight next!")
+#after "for" line, indented line indicates youre now inside the loop
+message = f"That's a wrap supervillians, catch ya later!"
+print(message)
+
+
+
+#range values
+for value in range(1, 4):
+  print(value)
+
+numbers = list(range(1, 6))
+print(numbers)
+
+even_numbers = list(range(2, 12, 3))
+print(even_numbers)
+
+squares = []
+for value in range(1, 11):
+  square = value ** 2
+  squares.append(square)
+
+print(squares)
+
+squares = []
+for value in range(1, 11):
+  squares.append(value**2)
+
+print(squares)
+
+squares = [value**2 for value in range(1, 11)]
+print(squares)
+# list comprehension/syntax, one line including "for value" & creation of new elements
+
+
+
+#looping through slices
+rookies = ['jalen green', 'cade cunningham', 'evan mobley', 'brandon boston jr.', 'josh giddey']
+print(rookies[0:2])
+
+rookies =  ['jalen green', 'cade cunningham', 'evan mobley', 'brandon boston jr.', 'josh giddey']
+message = f"\tHere are the top rookies in the league:"
+print(message)
+for rookie in rookies[:4]:
+  print(rookie.title())
+
+
+
+
+my_foods = ['pizza', 'spaghetti', 'banana bread', 'apples', 'eggs']
+friend_foods = my_foods[:]
+
+print("My favorite foods are:")
+print(my_foods)
+
+print("\n\tMy friend's favorite foods are:")
+print(friend_foods)
+
+my_foods = ['spaghetti', 'tacos', 'cake', 'pizza']
+friend_foods = my_foods[:]
+my_foods.reverse()
+my_foods.append('ice cream')
+friend_foods.append('broccoli',)
+friend_foods.sort()
+del my_foods[0]
+print(f"I thorougly enjoy {my_foods}!")
+print(f"\nMy friend's favorite foods are {friend_foods}")
+
+
+
+#tuples
+dimensions = (200,50)
+print(dimensions[0])
+print(dimensions[1])
+# dimensions [0] = 200, dimensions [1] = 50
+
+dimensions = 200,50,50
+for dimension in dimensions:
+  print(dimension)
+
+dimensions = (150,55)
+print("Original dimensions:")
+for dimension in dimensions:
+  print(dimension)
+
+dimensions = (400,75)
+print("\nModified dimensions:")
+for dimension in dimensions:
+  print(dimension)
+
+
+
+#if-else statements
+DC_superheroes = ['batman', 'superman', 'green lantern', 'martian manhunter']
+
+for DC_superhero in DC_superheroes:
+  if DC_superhero == 'batman':
+    print(DC_superhero.title())
+  else:
+    print(DC_superhero.upper())
+
+
+
+#conditional tests & equality operators
+car = 'volvo'
+car == 'volvo'
+#true
+car = 'volvo'
+car == 'bmw'
+#false
+car = 'volvo'
+car.lower() == 'audi'
+print(car)
+
+
+
+
+requested_toppings = 'pepperonis'
+
+if requested_toppings != 'banana peppers':
+  print("Enough with the banana peppers!")
+
+
+
+age = 18
+age == 18
+
+answer = 17
+
+if answer != 42:
+  print("That's not the right answer! Let's try that again.")
+
+age = 19
+age < 21
+#true
+age <=21
+#true
+age > 21
+#false
+age >= 21
+#false
+
+age_0 = 22
+age_1 = 18
+age_0 >= 21 and age_1 >=21
+#false
+
+age_1 = 22
+age_0 >= 21 and age_1 >= 21
+#true
+
+(age_0 >= 21) and (age_1 >= 21)
+
+answer = 21
+
+if answer != 27 or 23:
+  print ("WRONG!")
+if answer == 21:
+  print("Congratulations!")
+
+age_0 = 22
+age_1 = 18
+age_0 >= 21 or age_1 >= 21
+#true
+age_0 = 18
+age_0 >= 21 or age_1 >= 21
+#false
+
+
+
+
+#Boolean expressions
+requested_toppings = ['mushrooms', 'pepperoni', 'onions', 'cheese', 'pineapple']
+'mushrooms' in requested_toppings
+#true
+'olives' in requested_toppings
+#false
+
+banned_users = ['andrew', 'mike', 'david', 'alex']
+user = 'bruce'
+
+if user not in banned_users:
+  print(f"{user.title()}, you can post a response if you wish.")
+
+
+
+# if-elif-else statements
+age_0 = 23
+age_1 = 17
+if age_0 >= 18:
+  print("Congratulations, you are old enought to ruin the world!")
+  print("Have you decided who to vote for ?")
+if age_1 <= 17:
+  print("Tsk Tsk Tsk, not just yet, youngin'!")
+if age_0 != (0,):
+  print("Are you sure you truly want to vote?")
+
+  age = 17
+  if age >= 18:
+    print("You're old enough to vote!")
+    print("Have you registered to vote?")
+  else:
+    print("Sorry!, you're too young to vote.")
+    print("Come back to mess up the world in a year or two!")
+
+age = 13
+message_0 = f"\tyour admission cost is free."
+message_1 = f"\tyour admission cost is $25."
+message_2 = f"\tyour admission cost is $40."
+if age < 4:
+  print(message_0.title())
+elif age < 18:
+  print(message_1.title())
+else:
+  print(message_2.title())
+
+age = 12
+
+if age < 4:
+  price = 0
+elif age < 18:
+  price = 25
+else:
+  price = 40
+
+print(f"Your admission price is ${price}.")
+
+age = 16
+
+if age < 4:
+  price = 0
+elif age < 18:
+  price = 15
+elif age < 65:
+  price = 25
+else:
+  price = 10
+
+print(f"Your admission cost is ${price}!")
+
+age = 13
+
+if age < 4:
+  price = 0
+elif age < 18:
+  price = 7
+elif age < 65:
+  price = 15
+elif age >= 65:
+  price = 10
+
+print(f"Your admission price is ${price}")
+
+
+
+
+requested_toppings = ['mushrooms', 'pepperoni', 'celery', 'pineapples']
+
+if 'mushrooms' in requested_toppings:
+  print("Adding mushrooms")
+if 'cheese' not in requested_toppings:
+  print("Good choice!")
+if 'celery' in requested_toppings:
+  print("Adding celery")
+if 'pepperoni' in requested_toppings:
+  print("Adding pepperoni")
+
+print("\nFinished making your pizza, all done!")
+
+requested_toppings = ['celery', 'cheese', 'pepperoni']
+
+for requested_topping in requested_toppings:
+  print(f"Adding {requested_topping}.")
+
+print("\nAll done!")
+
+requested_toppings = ['spinach', 'celery', 'cheese']
+
+for requested_topping in requested_toppings:
+  if requested_topping == 'celery':
+    print("Sorry, we are out of celery!")
+  else:
+    print(f"Adding {requested_topping}")
+
+print("\nFinished making your pizza!")
+
+requested_toppings = []
+
+if requested_toppings:
+  for requested_topping in requested_toppings:
+    print(f"Adding your {requested_topping}.")
+  print("\Adding your toppings!")
+else:
+  print("Plain pizza... is everything okay at home?")
+
+available_toppings = ['pepperoni', 'cheese', 'broccoli']
+
+requested_toppings = ['mushrooms', 'french fries', 'marijuana', 'pepperoni', 'cheese']
+
+for requested_topping in requested_toppings:
+  if requested_topping in available_toppings:
+    print(f"Adding {requested_topping}.")
+  else:
+    print(f"Sorry! We don't have {requested_topping}.")
+
+print("\nFinished making your pizza, coming right up!")
+
+
+
+#dictionary
+alien_0 = {'sizes': '6', 'colors': 'yellow', 'points': 8}
+
+print(alien_0['colors'])
+print(alien_0['sizes'])
+print(alien_0['points'])
+
+alien_0 = {'color': 'yellow', 'points': '10'}
+
+new_points = alien_0['points']
+print(f"You just earned {new_points} points, keep it up!")
+
+alien_0 = {'color': 'black', 'points': 10}
+print(alien_0)
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
+
+alien_0 = {}
+
+alien_0['color'] = 'black'
+alien_0['points'] = 5
+
+print(alien_0)
+
+alien_0 = {'color': 'yellow'}
+print(f"The alien is {alien_0['color']}.")
+
+alien_0['color'] = 'ambrosia'
+print(f"The alien's color is now {alien_0['color']}.")
+
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+print(f"OG position: {alien_0['x_position']}")
+
+#move alien to the right
+#determine how far to move the alien based on current speed
+if alien_0['speed'] == 'slow':
+  x_increment = 1
+elif alien_0 ['speed'] == 'medium':
+  x_increment = 2
+else:
+  x_increment = 3
+
+# new position is old position plus the increment.
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+
+print(f"New position: {alien_0['x_position']}")
+
+
+
+
+#removing key-value pairs
+alien_0 = {'colors': 'yellow', 'points': 6}
+print(alien_0)
+
+del alien_0['points']
+print(alien_0)
+
+
+
+#dictionary of similar objects
+favorite_languages = {
+  'edward': 'ruby',
+  'james': 'java',
+  'phil': 'java',
+  'jen': 'python',
+  'alex': 'c',
+}
+
+favorite_languages['alex']
+
+language = favorite_languages['edward'].title()
+print(f"Edward's favorite language is {language}.")
+
+
+
+#get() method
+alien_0 = {'color': 'yellow', 'speed': 'slow'}
+
+point_value = alien_0.get('points', 'No point value currently assigned.')
+print(point_value)
+
+user_0 = {
+  'username': 'efermi',
+  'first': 'enrico',
+  'last': 'fermi',
+}
+
+
+
+
+#none special values & non secondary arguments
+for key, value in user_0.items():
+  print(f"\nKey: {key}")
+  print(f"Value: {value}")
+
+for k, v in user_0.items():
+  print(f"\nKey: {key}")
+  print(f"Value: {value}")
+
+
+
+#key-value pairs & for loops
+favorite_languages = {
+  'jenna': 'python',
+  'dave': 'english',
+  'rudy': 'c#',
+  'kobe': 'c+',
+  'mike': 'java',
+}
+
+for name, language in favorite_languages.items():
+  print(f"{name.title()}'s favorite language is {language.title()}.")
+
+favorite_languages = {
+  'jennifer': 'python',
+  'kobe': 'c#',
+  'mike': 'c+',
+  'curry': 'java',
+  'harden': 'ruby',
+}
+
+for name in favorite_languages.keys():
+  print(name.title())
+
+favorite_languages = {
+  'jen': 'python',
+  'sarah': 'c',
+  'edward': 'ruby',
+  'phil': 'python',
+}
+
+friends = ['phil', 'sarah']
+for name in favorite_languages:
+  print(f"Hi {name.title()}.")
+
+  if name in friends:
+    language = favorite_languages[name].title()
+    print(f"\t{name.title()}, I see you LOVE {language}!")
+
+favorite_languages = {
+  'jen': 'python',
+  'sarah': 'c',
+  'edward': 'ruby',
+  'phil': 'python',
+}
+
+if 'erin' not in favorite_languages:
+  print("Erin, please take our poll!")
+
+favorite_languages = {
+  'jen': 'python',
+  'sarah': 'c',
+  'edward': 'ruby',
+  'phil': 'python'
+}
+
+for name in sorted(favorite_languages):
+  print(f"{name.title()}, thank you for taking the poll. Have a great day!")
+
+favorite_languages = {
+  'jen': 'python',
+  'alex': 'c+',
+  'sarah': 'ruby',
+  'phil': 'c#'
+}
+
+print("The following langauges have been mentioned:")
+for language in favorite_languages.values():
+  print(language.title())
+
+
+
+
+#values & for statements
+favorite_languages = {
+  'kobe bryant': 'python',
+  'james harden': 'java',
+  'lebron james': 'C#',
+  'jayson tatum': 'python',
+  'stephen curry': 'HTML'
+}
+
+print("The following languages have been mentioned:")
+for language in set(favorite_languages.values()):
+  print(language.title())
+
+
+
+#set() method
+form_of_incomes = {'comic books', 'music', 'physical labor', 'NFT', 'software engineering', 'art', 'clothing'}
+
+print(form_of_incomes)
+
+
+
+
+programming_words = {
+  'sort': 'sorts list in alphabetical order',
+  'len': 'find length of list',
+  'f': 'formally updates everything inside of the block',
+  'strip': 'removes white spaces',
+  'values': 'returns list of values withou any keys',
+  'set': 'collection in which each item must be unique',
+  'none': 'special value to indicate absence of a value',
+}
+
+print(f"Here are a few python terms I have learned:")
+for word,meaning in programming_words.items():
+  print(f"\nWord: {word}")
+  print(f"Meaning: {meaning}")
+
+
+
+#nesting, storing multiple dictionaries in a list.
+zed_0 = {'color': 'black', 'points': 5}
+zed_1 = {'color': 'yellow', 'points': 10}
+zed_2 = {'color': 'magenta', 'points': 15}
+
+zeds = [zed_0, zed_1, zed_2]
+
+for zed in zeds:
+  print(zed)
+
+aliens = []
+
+for alien_number in range(30):
+  new_alien = {'color': 'yellow', 'points': 5, 'speed': 'slow'}
+  aliens.append(new_alien)
+
+for alien in aliens[:5]:
+  print(alien)
+print("...")
+
+print(f"Total number of aliens: {len(aliens)}")
+
+aliens = []
+
+for alien_number in range (30):
+  new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+  aliens.append(new_alien)
+
+for alien in aliens[:3]:
+  if alien['color'] == 'green':
+    alien['color'] = 'red'
+    alien['speed'] = 'medium'
+    alien['points'] = 10
+
+for alien in aliens[:5]:
+  print(alien)
+print("...")
+
+aliens = []
+
+for alien_number in range(60):
+  new_alien = {'color': 'yellow', 'points': 5, 'speed': 5}
+  aliens.append(new_alien)
+
+for alien in aliens[:1]:
+  if alien['color'] == 'yellow':
+    alien['color'] = 'ambrosia'
+    alien['speed'] = 'medium'
+    alien['points'] = 10
+  elif alien['color'] == 'ambrosia':
+    alien['color'] = 'black'
+    alien['speed'] = 'fast'
+    alien['points'] = 15
+
+  for alien in aliens[:3]:
+    print(alien)
+
+  print("...")
+
+  print(f"Total number of aliens: {len(aliens)}")
+
+
+
+#list in a dictionary
+pizza = {
+  'crust': 'thick',
+  'toppings': ['mushrooms', 'extra cheese'],
+}
+
+print(f"You ordered a {pizza['crust']}-crust pizza "
+     "with the following toppings:")
+for topping in pizza['toppings']:
+  print(f"\t{topping}")
+
+favorite_languages = {
+  'jen': ['c#', 'ruby'],
+  'sarah': ['c'],
+  'edward': ['c+', 'go'],
+  'phil': ['haskell', 'HTML'],
+}
+
+for name, languages in favorite_languages.items():
+  print(f"\n{name.title()}'s favorite languages are:")
+  for language in languages:
+    print(f"\t{language.title()}")
+
+
+
+#dictionary in a dictionary
+users = {
+  'aeinstein': {
+    'first': 'albert',
+    'last': 'einstein',
+    'location': 'princeton',
+  },
+
+  'mcurie': {
+    'first': 'marie',
+    'last': 'curie',
+    'location': 'paris'
+  }
+
+
+}
+
+for username, user_info in users.items():
+  print(f"\nUsername: {username}")
+  full_name = f"{user_info['first']} {user_info['last']}"
+  location = user_info['location']
+
+  print(f"\tFull name: {full_name.title()}")
+  print(f"\tLocation: {location.title()}")
+
+
+
+
+pets = {
+  'jenna': 'dog',
+  'albert': 'cat',
+  'johnny': 'giraffe',
+  'rupert': 'tiger',
+  'mike tyson': 'liger',
+  'michael jackson': 'monkey',
+}
+
+for pet_owners, pets in pets.items():
+  print(f"\nHere are some pet owners who cherish their pets: {pet_owners.title()}")
+  print(f"\tPets they owned: {pets.title()}")
+
+
+
+
+sports = {
+  'chavez': 'baseball',
+  'randy': 'football',
+  'tyson': 'basketball',
+  'tommy': 'cricket',
+  'michael': 'tabletop tennis',
+  'charles barkley': 'golf'
+}
+
+for sport_players, sport in sports.items():
+  print(f"{sport_players.title()} REALLY enjoys playing, watching & experiencing {sport.title()}!!")
+
+
+
+
+#input() method
+name = input("Please enter your name: ")
+print(f"\nHello, {name.title()}!")
+
+prompt = "If you tell me your favorite basketball team, we can personalize the messages you see."
+prompt += "\nWhat is your favorite basketball team?: "
+
+basketball_team = input(prompt)
+print(f"The {basketball_team}? I like them too!")
+
+
+
+#int() function
+prompt = "How old are you?: "
+
+age = input(prompt)
+print(f"\nAre you really {age}? You are old as HELL!")
+
+prompt = "If you tell us who you are, we can personalize the messages you see."
+prompt += "\nWhat is your first name? "
+# += stands for adding another line of code to the first line.
+name = input(prompt)
+print(f"\nHello, {name}!")
+
+age = input("How old are you? ")
+print(age)
+age = int(age)
+age >= 18
+#answer would be true
+
+height = input("How tall are you, in inches? ")
+height = int(height)
+
+if height >= 48:
+  print("\n\tYou're tall enough to ride!")
+else:
+  print("\n\tSorry! Come back & enjoy the ride when you're older.")
+
+
+
+#modulo operator
+print(4 % 3)
+#modulo operator
+
+print(5 % 3)
+
+print(6 % 3)
+
+number = input("Enter a number, and I'll tell you if it's even or odd: ")
+number = int(number)
+
+if number % 2 == 0:
+  print(f"\nThe number {number} is even.")
+else:
+  print(f"\nThe number {number} is odd.")
+
+number = input("Give me a number & I'll tell you if it's a multiple of 10 or not.: ")
+number = int(number)
+
+if number ** 10 == 0:
+  print(f"\nThe number {number} is a multiple of 10.")
+else:
+  print(f"\n\tThe number {number} is NOT a multiple of 10.")
+
+
+
+
+#prompt
+prompt = "How many folks will be dining out today?: "
+guests = input(prompt)
+guests = int(guests)
+
+if guests <= 8:
+  print(f"\n\tYou're table will be right this way!")
+else:
+  print(f"\n\tSorry, We don't have enough seats! Can I interest you in an extra table or chair?")
+
+prompt = "What kind of rental car will you be comfortable with choosing tonight?: "
+cars = input(prompt)
+
+if cars == 'mercedes':
+  print(f"\n\tGood choice! Your {cars} although is a little out of date, it will take you far and wide.")
+else:
+  print(f"\n\tSorry! we do not have that available at the moment")
+
+
+
+#while loop
+current_number = 1
+while current_number <= 5:
+  print(current_number)
+  current_number += 1
+
+prompt = "\nTell me something, & I will repeat it back to you: "
+prompt += "\nEnter 'quit' to end the program. "
+
+message = ""
+while message != 'quit':
+  message = input(prompt)
+
+  if message != 'quit':
+    print(message)
+
+
+
+#break statement
+prompt = "\nPlease enter name of city you've visited:"
+prompt += "\n(Enter quit when you are finished.) "
+
+while True:
+  city = input(prompt)
+
+  if city == 'quit':
+    break
+  else:
+    print(f"I'd love to go to {city.title()}!")
+
+prompt = "\nTell me how your day was & I'll judge if it was good or not:"
+prompt += "\nEnter 'quit' to end the program. "
+
+active = True
+while active:
+  message = input(prompt)
+
+  if message == 'quit':
+    active = False
+  else:
+    print(message)
+
+
+
+#continue statement
+current_number = 0
+while current_number < 10:
+  current_number += 1
+  if current_number % 2 == 0:
+    continue
+
+  print(current_number)
+
+
+
+
+#avoiding infinite loops
+x = 1
+while x <= 5:
+  print(x)
+  x += 1
+
+prompt = "Welcome! Your age please? "
+
+age = input(prompt)
+age = int(age)
+
+if age < 3:
+  print(f"Your ticket is free! Be happy you are only {age}. Enjoy!")
+elif age in range(3,12):
+  print(f"Thanks! the price of today's movie will be $10. Enjoy!")
+else:
+  print(f" Wow! {age} is old! I wish you best of luck & be sure to take your vitamins!")
+
+prompt = "\nWelcome! Please enter the pizza toppings you would like on your pizza.:"
+prompt += "\n(Enter quit when you are finished.) "
+
+while True:
+  pizza_toppings = input(prompt)
+
+  if pizza_toppings == 'pepperoni':
+    print(f"\n\tPepperoni coming right up!")
+  elif pizza_toppings == 'banana peppers':
+    print(f"\n\tGotcha!")
+  elif pizza_toppings == 'spinach':
+    print(f"\n\tSorry! we are out of spinach.")
+  elif pizza_toppings == 'celery':
+    print(f"\n\tOn the way!")
+  elif pizza_toppings == 'cheese':
+    print(f"\n\tNot too much now!")
+  elif pizza_toppings == 'quit':
+    break
+  else:
+    print("I'd love to have some of that!")
+
+
+
+
+#using while loop with lists & dictionaries
+unconfirmed_users = ['alice', 'brian', 'candace']
+confirmed_users = []
+
+while unconfirmed_users:
+  current_user = unconfirmed_users.pop()
+
+  print(f"\nVerifying user: {current_user.title()}")
+  confirmed_users.append(current_user)
+
+print("\nThe following users have been confirmed:")
+for confirmed_user in confirmed_users:
+  print(confirmed_user.title())
+
+
+
+#removing all instances of specific values from a list
+pets = ['dog', 'cat', 'dog', 'goldfish', 'cat', 'rabbit', 'cat']
+print(pets)
+
+while 'cat' in pets:
+  pets.remove('cat')
+
+print(pets)
+
+
+
+
+#filling dictionary with user input
+responses = {}
+
+polling_active = True
+
+while polling_active:
+  name = input(f"\nWhat is your name? ")
+  response = input("Which mountain would you like to climb someday? ")
+
+  responses[name] = response
+
+  repeat = input("Would you like to let another person respond? (yes/no) ")
+  if repeat == 'no':
+    polling_active = False
+
+  print("\n--- Poll Results ---")
+  for name, response in responses.items():
+    print(f"{name} would like to climb {response}.")
+
+
+
+#filling dictionary with user input
+sandwich_orders = ['mayo sandwich', 'tuna sandwich', 'spicy ketchup sandwich', 'italian sauce sandwich', 'pepper sandwich', 'side of cookies', 'pastrami sandwich', 'pastrami sandwich', 'pastrami sandwich']
+finished_sandwiches = []
+
+if 'pastrami sandwich' in sandwich_orders:
+  print(f"Hey! we are all out of pastrami.")
+
+while 'pastrami sandwich' in sandwich_orders:
+  sandwich_orders.remove('pastrami sandwich')
+
+print(sandwich_orders)
+
+while sandwich_orders:
+  sandwich_in_process = sandwich_orders.pop()
+
+  print(f"\nYour {sandwich_in_process.title()} is cooking right up! Just be patient!")
+  finished_sandwiches.append(sandwich_in_process)
+
+print("\nThe following sandwiches have currently been created today!:")
+for finished_sandwiches in finished_sandwiches:
+  print(finished_sandwiches.title())
+
+responses = {}
+
+polling_active = True
+
+while polling_active:
+  name = input("\n What's your name? ")
+  response = input("\nWhat is your dream vacation? If you could visit one place im the world, where would it be? ")
+
+  responses[name] = response
+
+  repeat = input("Would you like to pass this poll onto a buddy of yours? (yes/no)")
+  if repeat == 'no':
+    polling_active = False
+
+print("\n--- Poll Results ---")
+for name, response in responses.items():
+  print(f"{name} would love to visit {response}.")
+
+
+
+#functions, docstrings, function calls
+def greet_user():
+  """Display simple greeting."""
+  print("Hello!")
+
+
+#passing information to a function
+greet_user()
+
+def greet_user(username):
+  """Display simple greeting"""
+  print(f"Hello, {username.title()}!")
+
+greet_user('jesse')
+
+
+#parameters, arguments
+def display_message():
+  """What I'm learning this chapter"""
+  print("Today I have been learning about paramaters, arguments,& functions.")
+
+display_message()
+
+def favorite_book(title):
+  """My favorite book"""
+  print(f"My favorite book would have to be {title.title()}")
+
+favorite_book('Fable')
+
+
+
+#passing arguments, positional arguments
+def describe_pet(animal_type, pet_name):
+  """display information about a pet."""
+  print(f"\nI have a {animal_type}.")
+  print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet('hamster', 'harry')
+
+
+
+
+#multiple function calls, keyword arguments
+def describe_heroes(hero_name, hero_ability):
+  """Display information about a superhero"""
+  print(f"\nMy favorite hero's name is {hero_name}.")
+  print(f"My {hero_name}'s ability is {hero_ability.title()}")
+
+describe_heroes(hero_name='Spider-man', hero_ability='Web slinging')
+describe_heroes(hero_name='Hulk', hero_ability='HULK SMASH!!!')
+
+
+
+#default values
+def describe_pet(pet_name, animal_type='dog'):
+  """Display information about a pet."""
+  print(f"\nI have a {animal_type}.")
+  print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet(pet_name='willie')
+
+
+
+#equivalent function calls
+def describe_pet(pet_name, animal_type='dog'):
+  """Display information about a pet."""
+  print(f"\nI have a {animal_type}.")
+  print(f"My {animal_type}'s name is {pet_name.title()}.")
+
+describe_pet('willie')
+describe_pet(pet_name='willie')
+
+describe_pet('harry', 'hamster')
+describe_pet(pet_name='harry', animal_type='hamster')
+describe_pet(animal_type='hamster', pet_name='harry')
+
+
+
+
+def make_shirt(shirt_message, shirt_size='Medium'):
+  """Display information about a t shirt size & message"""
+  print(f"\nHere is a {shirt_size} sized T-Shirt with the message '{shirt_message.title()}'.")
+
+make_shirt('Have a good day!', 'Large')
+make_shirt(shirt_size='Small', shirt_message='You are AWESOME!')
+make_shirt('Have a good day!')
+make_shirt('You are beautiful',shirt_size='XXtra small')
+
+
+
+
+def describe_city(city, country='mexico'):
+  """Display info for countries with cities inside."""
+  print(f"\n{city} is in {country}")
+
+describe_city('Mexico City')
+describe_city('Guadalajara')
+describe_city('Puebla')
+describe_city(city='Östersund', country='Sweden')
+
+
+
+#return values & returning simple values
+def get_formatted_name(first_name, last_name):
+  """Return a full name, neatly formatted"""
+  full_name = f"{first_name} {last_name}"
+  return full_name.title()
+
+musician = get_formatted_name('jimi', 'hendrix')
+print(musician)
+musician = get_formatted_name('kanye', 'west')
+print(musician)
+musician = get_formatted_name('mac', 'miller')
+print(musician)
+
+def get_formatted_name(first_name, middle_name, last_name):
+  """Return a full name, neatly formatted."""
+  full_name = f"{first_name} {middle_name} {last_name}"
+  return full_name.title()
+
+greatest_of_all_time = get_formatted_name('Payton', 'Joseph', 'Kelley')
+print(greatest_of_all_time)
+
+
+
+#making an argument optional
+def get_formatted_name(first_name, last_name, middle_name=''):
+  """Return a full name, neatly formatted."""
+  if middle_name:
+    full_name = f"{first_name} {middle_name} {last_name}"
+
+  else:
+    full_name = f"{first_name} {last_name}"
+  return full_name.title()
+
+best_of_all_time = get_formatted_name('Pimp', 'P')
+print(best_of_all_time)
+
+best_of_all_time = get_formatted_name('Pimp', 'P', 'killa')
+print(best_of_all_time)
+
+
+
+#returning a dictionary
+def build_person(first_name, last_name):
+  """Return a dictionary of info about a person."""
+  person = {'first': first_name, 'last': last_name}
+  return person
+
+musician = build_person('mac', 'miller')
+print(musician)
+
+def build_person(first_name, last_name, age=None):
+  """Return a dictionary of information about a person."""
+  person = {'first': first_name, 'last': last_name}
+  if age:
+    person['age'] = age
+    return person
+
+musician = build_person('mac', 'miller', age=26)
+print(musician)
+
+
+
+#using a function with a while loop
+def get_formatted_name(first_name, last_name):
+  """Return full name, neatly formatted."""
+  full_name = f"{first_name} {last_name}"
+  return full_name.title()
+
+while True:
+  print("\nPlease tell me your name: ")
+  print("(enter 'q' at any time to quit)")
+
+  f_name = input("First name: ")
+  if f_name == 'q':
+    break
+  l_name = input("Last name: ")
+  if l_name == 'q':
+    break
+
+  formatted_name = get_formatted_name(f_name, l_name)
+  print(f"\nHello, {formatted_name}!")
+
+def city_country(city, country):
+  """Return city & country"""
+  print(f"\n{city.title()}, {country.title()}")
+
+city_country("mexico city", "mexico")
+city_country("detroit", "united states")
+city_country("philly", "united states")
+
+def make_album(artist_name, album_title, number_of_songs=None):
+  """Dictionary describing music album"""
+  album = {'Name': artist_name, 'album': album_title}
+  if number_of_songs:
+    album['number of songs'] = number_of_songs
+  return album
+
+good_album = make_album('Mac Miller', 'Swimming', number_of_songs=13)
+print(good_album)
+
+good_album = make_album('Snoop Dogg', 'Ego Trippin')
+print(good_album)
+
+good_album = make_album('2pac', 'Me against the world', number_of_songs=15)
+print(good_album)
+
+def make_album(artist_name, album_title, number_of_songs=None):
+  """Dictionary describing music album"""
+  full_album = f"{artist_name} {album_title} {number_of_songs}"
+  return full_album
+
+while True:
+  print (f"\nWhat is your favorite artist's name, album, and how many songs are on the tracklist?")
+  print("(enter 'q' at any time to quit)")
+
+  A_name = input("Artist's Name: ")
+  if A_name == 'q':
+    break
+  A_title = input("Album Title: ")
+  if A_title == 'q':
+    break
+  SOT = input("# of Songs on track list: ")
+  if SOT == 'q':
+    break
+
+  formatted_album = make_album(A_name, A_title, SOT)
+  print(f"\n{A_title} by {A_name} with {SOT} songs!? Nice!")
+
+
+
+#passing a list
+def greet_users(names):
+  """Print a simple greeting to each user in the list."""
+  for name in names:
+    msg = f"\nHello, {name.title()}!"
+    print(msg)
+
+usernames = ['pimp p', 'payton', 'tha god']
+greet_users(usernames)
+
+
+
+#modifying lists in function
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+while unprinted_designs:
+  current_design = unprinted_designs.pop()
+  print(f"Printing model: {current_design}")
+  completed_models.append(current_design)
+
+print("\nThe following models have been printed:")
+for completed_model in completed_models:
+  print(completed_model)
+
+def print_models(unprinted_designs, completed_models):
+  """
+  Simulate printing each design, until none are left.
+  Move each design to completed_models after printing.
+  """
+  while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    print(f"Printing model: {current_design}")
+    completed_models.append(current_design)
+
+def show_completed_models(completed_models):
+  """Show all the models that were printed"""
+  print("\nThe following models have been printed:")
+  for completed_model in completed_models:
+    print(completed_model)
+
+unprinted_designs = ['phone case', 'robot pendant', 'dodecahedron']
+completed_models = []
+
+print_models(unprinted_designs, completed_models)
+show_completed_models(completed_models)
+
+
+
+preventing a function from modifying a list
+def show_messages(messages):
+  """Function printing list of short messages"""
+  for message in messages:
+    print(f"Inspirational message: {message.title()}")
+
+short_text_messages = ['everything & anything is possible', 'you are the greatest', 'anything & everything is accomplishable']
+show_messages(short_text_messages)
+
+def send_messages(undelivered_message, sent_messages):
+  """Prints each text message & moves each message to a new list"""
+  while undelivered_message:
+    delivering_message = undelivered_message.pop()
+    print(f"Sending message: {delivering_message}")
+    sent_messages.append(delivering_message)
+
+def show_sent_messages(sent_messages):
+  """Shows all messages that have been sent & delivered."""
+  print("\nThe following messages have been sent:")
+  for sent_message in sent_messages:
+    print(sent_message)
+
+undelivered_message = ['anything is possible', 'you are the greatest', 'anything & everything is accomplishable']
+sent_messages = []
+
+send_messages(undelivered_message, sent_messages)
+show_sent_messages(sent_messages)
+
+
+
+#passing an arbitrary number of arguments
+def make_pizza(*toppings):
+  """Print the list of toppings that have been requested."""
+  print(toppings)
+
+make_pizza('pepperoni')
+make_pizza('cheese', 'pepperoni', 'marijuana', 'paprika seasoning')
+
+def make_pizza(*toppings):
+  """Summarize the pizza we are about to make."""
+  print("\nMaking a pizza with the following toppings:")
+  for topping in toppings:
+    print(f"- {topping}")
+
+make_pizza('pepperoni')
+make_pizza('cheese', 'curry powder', 'onions', 'hint of garlic', 'ghost peppers')
+
+
+
+#mixing positional & arbitrary arguments
+def make_pizza(size, *toppings):
+  """Summarize the pizza we are about to make."""
+  print(f"\nMaking a {size}-inch pizza with the following toppings:")
+  for topping in toppings:
+    print(f"- {topping}")
+
+make_pizza(16, 'pepperoni')
+make_pizza(12, 'magical mushrooms', 'scottage cheeze', 'pepperoni', 'ghost peppers')
+
+
+
+using arbitrary keyword arguments
+def build_profile(first, middle, last, **user_info):
+  """Build a dictionary containing everything we know aboht a user."""
+  user_info['first_name'] = first
+  user_info['middle_name'] = middle
+  user_info['last_name'] = last
+  return user_info
+
+user_profile = build_profile('Huey', 'P', 'Newton',
+                            Location='Oakland, Cali',
+                            field='Activist')
+print(user_profile)
+
+def sandwich_choices(*toppings):
+  """Function collecting as many arbitray toppings as possible."""
+  print("\nMaking a sandwich with the following toppings:")
+  for topping in toppings:
+    print(f"- {topping}")
+
+sandwich_choices('deli tuna', 'onions', 'toasted for 45 seconds')
+sandwich_choices('salami')
+sandwich_choices('tuna', 'mayo', 'chipotle sauce')
+
+def build_person(first, last, **user_info):
+  """Function with arbitrary number of keyword arguments to describe myself"""
+  user_info['first_name'] = first
+  user_info['last_name'] = last
+  return user_info
+
+user_profile = build_person('Pimp', 'P',
+                           origin='Detroit',
+                            favorite_color='yellow',
+                           how_i_feel_about_myself='I am the greatest')
+print(user_profile)
+
+def cars(manufacturer, model, **car_info):
+  """Dictionary describing a car"""
+  car_info['manufacturer'] = manufacturer
+  car_info['model'] = model
+  return car_info
+
+car_make = cars('mercedi', 'benz',
+               color='yellow',
+               wheels='white trimmed',
+                video_console_in_back_seat='nintendo switch')
+print(car_make)
+
+
+
+#classes, attributes, objects, instances, creating & using a class, accessing attributes, calling methods, creating multiple instances
+class Dog:
+  """A simple attempt to model a dog."""
+
+  def __init__(self, name, age):
+    """Initialize name & age attributes."""
+    self.name = name
+    self.age = age
+
+  def sit(self):
+    """Simulate a dog sitting in response to a command."""
+    print(f"{self.name} is now sitting.")
+
+  def roll_over(self):
+    """Simulate rolling over in response to a command."""
+    print(f"{self.name} rolled over!")
+
+my_dog = Dog('Herbert', 7)
+your_dog = Dog('jimmy', 4)
+
+my_dog.sit()
+my_dog.roll_over()
+
+print(f"My dog's name is {my_dog.name}.")
+print(f"My dog is {my_dog.age} years old.")
+
+print(f"\nYour dog's name is {your_dog.name}.")
+print(f"Your dog is {your_dog.age} years old.")
+your_dog.roll_over()
+
+
+
+#homework of my own
+class User:
+  "simple attempt to model a user"
+  def __init__(self, first_name, last_name, password, username, email_address, nickname, phone_number, picture):
+    self.Fname = first_name
+    self.Lname = last_name
+    self.password = password
+    self.username = username
+    self.email_address = email_address
+    self.nickname = nickname
+    self.phone_number = phone_number
+    self.picture = picture
+    self.login_attempts = 0
+    self.full_name = f"{self.Fname} {self.Lname}"
+
+  def describe_User(self):
+    """Summary of user's information"""
+    print(f"{self.Fname} {self.Lname}'s username is {self.username}.")
+    print(f"\nAssociated phone number: {self.phone_number}")
+    print(f"\nPlease verify your email, {self.email_address} to get started.\n\tAs well as uploading your profile picture, {self.picture}")
+
+  def greet_User(self):
+    """Summary that prints personalized greeting to the user"""
+    print(f"Hello {self.nickname}!")
+
+  def read_login_attempts(self):
+    """Prints a statement showing how many login attempts"""
+    print(f"{self.full_name} has {self.login_attempts} amount of login attempts.")
+
+  def login_attempts(self, logins):
+    """Summary of how many login attempts by a certain user."""
+    self.login_attempts = logins
+
+  def increment_login_attempts(self, attempts):
+    """Increments value of login_attempts by 1."""
+    self.login_attempts += attempts
+
+
+class Admin(User):
+  """Child class representing aspects of a User, specific to Admins."""
+
+  def __init__(self, first_name, last_name, password, username, email_address, nickname, phone_number, picture):
+    """Initialize the admin."""
+    super().__init__(first_name, last_name, password, username, email_address, nickname, phone_number, picture)
+
+    self.privileges = Privileges()
+
+class Privileges():
+  """A simple attempt to model privileges for an Admin."""
+
+  def __init__ (self, privileges=[]):
+    self.privileges = privileges
+
+  def show_privileges(self):
+    """Print statement describing the battery size."""
+    print("\nPrivileges:")
+    if self.privileges:
+      for privilege in self.privileges:
+        print("-" + privilege)
+    else:
+      print("- This user has no privileges.")
+
+user1 = User('Pimp', 'P', 'strong', 'IamPimpP', 'p@gmail.com', 'pp', '555-787-2610', 'Wilt chamberlain')
+user2 = User('Gilbert', 'Ross', 'GRoss', 'GRossThaGod', 'G@gmail.com', 'Gross!', '862-467-8210', 'Allen iverson holding a basketball')
+
+user1.describe_User()
+user1.greet_User()
+
+user1.login_attempts = 7
+user1.read_login_attempts()
+
+user1.increment_login_attempts(1)
+user1.read_login_attempts()
+
+user2.describe_User()
+user2.greet_User()
+
+principle = Admin('principle', 'strickland', 'thagreatestprincipleofalltime', 'PimpPrinciple', 'principlesrcool@gmail.com', 'thagreatest', '767-218-8910', 'giancarlo esposito')
+principle.greet_User()
+
+principle.privileges.show_privileges()
+print("\nAdding privileges...")
+principle_privileges = [
+  'can reset passwords',
+  'can ban users',
+  'can moderate discussions',
+]
+principle.privileges.privileges = principle_privileges
+principle.privileges.show_privileges()
+
+
+
+#setting default values for an attribute, modifying attribute values, modifying an attribute's value directly, modifying an attribute's value through a method
+class Car:
+  """Simple attempt to model a car."""
+
+  def __init__(self, make, model, year):
+    """Initialize attributes to describe a car."""
+    self.make = make
+    self.model = model
+    self.year = year
+    self.odometer_reading = 0
+
+  def get_descriptive_name(self):
+   """Return a neatly formatted descriptive name."""
+   long_name = f"{self.year} {self.make} {self.model}"
+   return long_name.title()
+
+  def read_odometer(self):
+    """Print a statement showing the car's mileage."""
+    print(f"This car has {self.odometer_reading} miles on it.")
+
+
+  def update_odometer(self, mileage):
+    """Set the odometer reading to the given value.
+    Reject the change if it attempts to roll the odometer back.
+    """
+    if mileage >= self.odometer_reading:
+      self.odometer_reading = mileage
+    else:
+      print("You can't roll back an odometer!")
+
+  def increment_odometer(self, miles):
+    """Add the given amount to the odometer reading."""
+    self.odometer_reading += miles
+
+my_used_car = Car('volvo', 's60', 2013)
+print(my_used_car.get_descriptive_name())
+
+my_used_car.update_odometer(99_600)
+my_used_car.read_odometer()
+
+my_used_car.increment_odometer(1_200)
+my_used_car.read_odometer()
+
+my_new_car = Car('audi', 'a4', 2019)
+print(my_new_car.get_descriptive_name())
+
+my_new_car.update_odometer(99)
+my_new_car.read_odometer()
+
+
+
+#incrementing an attribute's value through a method
+class Restaurant:
+  """Simple attempt to model a restaurant"""
+
+  def __init__(self, name, cuisine):
+    self.name = name
+    self.cuisine = cuisine
+    self.number_served = 0
+
+  def open_restaurant(self):
+    """simulating restaurant being open or not."""
+    print(f"{self.name} restaurant is now open!")
+
+  def describe_restaurant(self):
+   """simulate information about the restaurant"""
+   print(f"{self.name} is dirty!")
+   print(f"{self.name} has 5 workers!")
+
+  def served_number(self):
+    """prints the number of customers that have been served."""
+    print(f"This {self.name.title()}'s has {self.number_served} amount of people served.")
+
+  def set_number_served(self, customers_served):
+    """Sets number of customers served."""
+    self.number_served = customers_served
+
+  def increment_number_served(self, customers_served):
+    """Increment number of customers who've been served."""
+    self.number_served += customers_served
+
+class IceCreamStand(Restaurant):
+  """Attempt to model an ice cream stand"""
+
+  def __init__(self, name, cuisine):
+    """initialize attributes of parent class"""
+    super().__init__(name, cuisine)
+    self.flavor = 'chocolate', 'moroccan caramel'
+
+  def describe_flavor(self):
+    """print statement describing ice cream flavor"""
+    print(f"This ice cream stand contains the following: {self.flavor}.")
+
+
+my_restaurant = Restaurant('bobs burger', 'salad & lasagna')
+my_restaurant.describe_restaurant()
+
+print(f"My restaurant's name is {my_restaurant.name}!")
+print(f"This restaurant sells {my_restaurant.cuisine}!")
+my_restaurant.set_number_served(18)
+my_restaurant.served_number()
+
+his_restaurant = Restaurant('Giraffe Express', 'Happy meals & lunchables')
+his_restaurant.describe_restaurant()
+
+his_restaurant.set_number_served(400)
+his_restaurant.served_number()
+
+his_restaurant.increment_number_served(650)
+his_restaurant.served_number()
+
+his_restaurant.open_restaurant()
+
+their_restaurant = Restaurant('Mcdonalds but for grown-ups', 'Exquisite burgers & mouth watering fries')
+their_restaurant.describe_restaurant()
+their_restaurant.open_restaurant()
+
+specific_restaurant = IceCreamStand('Ice Cream Stand for winners', 'Ice cream')
+print(specific_restaurant.describe_restaurant())
+specific_restaurant.describe_flavor()
+#instances as attributes, overriding methods from the parent class, defining attributes & methods for the child class
